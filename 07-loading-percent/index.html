@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loading</title>
+	<style type="text/css">
+	.bg {
+		  background: #fff;
+		  border-radius: 5px;
+		  border: 1px solid #6cf;
+		  width : 250px;
+		  height: 50px;
+		  line-height: 50px;
+		  position: relative;
+		}
+
+		.text {
+		  position: absolute;
+		  left: 125px;
+		  transform: translateX(-50%);
+		  font-size:25px;
+		}
+		
+		.bg > .text {
+		  color: #6cf;
+		}
+
+		.progress {
+		  position: absolute;
+		  height: 100%;
+		  background: #6cf;
+		  overflow: hidden;
+		}
+		.progress > .text {
+		  color: #fff;
+		}
+		.progress {
+	  animation: progress 5s;
+	}
+	@keyframes progress {
+	  from { width: 0%; }
+	  to { width: 100%; }
+	}
+	</style>
+</head>
+<body>
+	<div class="bg">
+	  <span class="text">48%</span>
+	  <div class="progress" style="width: 48%;">
+	    <span class="text">48%</span>
+	  </div>
+	</div>
+</body>
+</html>
