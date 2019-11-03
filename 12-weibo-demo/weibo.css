@@ -62,3 +62,86 @@ img{
 .menuItem p{
   font-size: 14px;
 }
+
+/* 热门话题 */
+.hotCnt{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-top: 1px solid #ddd;
+  padding: 0 10px;
+}
+.hotItem{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  align-items: center;
+}
+.hotCnt .hotItem:nth-child(3),
+.hotCnt .hotItem:nth-child(4){
+  border-bottom: none;
+}
+
+.hotItem img{
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.hotCnt .hotItem p{
+  flex: 1;
+  border-right: 1px solid #ddd;
+}
+.hotCnt .hotItem:nth-child(even) p{
+  border-right: none;
+}
+
+/* 微博之夜 */
+.weiboCnt{
+  display: flex;
+  flex-direction: column;
+  border-top: 10px solid #f2f2f2;
+}
+.weiboCnt .title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-left: 3px solid #ff8201;
+  margin: 5px 0;
+  align-items: baseline;
+}
+.weiboCnt .title .titleMain{
+  color: #636363;
+  font-size: 16px;
+}
+.title2{
+  font-size: 14px;
+  color: #939393;
+}
+
+.weiboGroup{
+  padding: 0 10px;
+  width: 100%;
+  overflow-x: hidden;
+}
+.weiboBox{
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}
+.groupItem{
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  width: 45%;
+  flex-shrink: 0;
+}
+.groupItem p{
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 10px;
+  font-size: 14px;
+}
